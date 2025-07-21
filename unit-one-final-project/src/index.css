@@ -1,0 +1,141 @@
+html {
+  width: 100vw;
+  height: 100%;
+}
+
+body {
+
+  background-color: rgb(246, 248, 253);
+}
+
+footer {
+  display: flex;
+  justify-content: end;
+  margin-top: auto;
+}
+
+a {
+  color: rgb(210, 233, 251);
+}
+
+.header {
+  margin-top: auto;
+  background-color: rgb(57, 62, 91);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: space-evenly;
+  margin-left: 60%;
+  margin-top: 30px;
+  font-size: large;
+
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+  font-style: italic;
+  color: black;
+
+}
+
+
+.logo {
+
+  margin-left: 60px;
+  margin-right: 60px;
+  font-size: 60px;
+  color: rgb(225, 241, 255);
+  position: fixed;
+  top: 0;
+
+}
+
+.search-feature {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.home-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 6em;
+  margin-bottom: 30px;
+  color: rgb(255, 255, 255);
+
+}
+
+.validation-message {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 161, 161);
+}
+
+.exam-title-display {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 4em;
+}
+
+.exam-display {
+  display: flex;
+  margin-top: 3em;
+  background-color: rgb(67, 72, 102);
+}
+
+.exam-display-procedure {
+  display: flex;
+  font-size: 2em;
+  margin-left: 2em;
+  padding-top: 20px;
+  color: rgb(225, 241, 255);
+}
+
+.exam-display-views {
+  margin-left: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: rgb(225, 241, 255)
+}
+
+
+
+.exams-display-line {
+  color: black;
+}
+
+.add-shortcut-button {
+
+  justify-content: end;
+  margin-top: 6em;
+  margin-bottom: 1em;
+  
+
+}
+
+.about-title {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
+
+}
+
+.about-paragraph {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+
+}
+
+.shortcuts-title {
+  display: flex;
+  font-size: 2.5em;
+  justify-content: center;
+
+}

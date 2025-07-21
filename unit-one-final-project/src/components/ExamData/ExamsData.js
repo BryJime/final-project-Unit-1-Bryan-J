@@ -7,7 +7,8 @@ const ExamsData = [
         views: "AP, AXIAL",
         alias: ["clavicle", "collarbone"],
         region: "UPPER EXTREMITY",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 2,
@@ -16,7 +17,8 @@ const ExamsData = [
         views: "AP, LATERAL",
         alias: ["scapula"],
         region: "UPPER EXTREMITY",
-        common: true
+        common: true,
+        shortcut: false
     },
 
     {
@@ -26,7 +28,8 @@ const ExamsData = [
         views: "AP, LATERAL",
         alias: ["shoulder"],
         region: "UPPER EXTREMITY",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 4,
@@ -35,7 +38,8 @@ const ExamsData = [
         views: "AP (Internal), AP (External), LATERAL",
         alias: ["shoulder"],
         region: "UPPER EXTREMITY",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 5,
@@ -44,7 +48,8 @@ const ExamsData = [
         views: "AP (NEUTRAL), GRASHEY, LATERAL",
         alias: ["shoulder"],
         region: "UPPER EXTREMITY",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 6,
@@ -53,7 +58,8 @@ const ExamsData = [
         views: "AP, LATERAL",
         alias: ["humerus"],
         region: "UPPER EXTREMITY",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 7,
@@ -62,7 +68,8 @@ const ExamsData = [
         views: "AP, LATERAL",
         alias: ["elbow"],
         region: "UPPER EXTREMITY",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 8,
@@ -71,7 +78,8 @@ const ExamsData = [
         views: "AP, OBLIQUE(EXTERNAL), LATERAL",
         alias: ["elbow"],
         region: "UPPER EXTREMITY",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 9,
@@ -80,7 +88,8 @@ const ExamsData = [
         views: "AP, OBLIQUES(EXTERNAL&INTERNAL), LATERAL",
         alias: ["elbow"],
         region: "UPPER EXTREMITY",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 10,
@@ -89,7 +98,8 @@ const ExamsData = [
         views: "AP, LATERAL",
         alias: ["forearm"],
         region: "UPPER EXTREMITY",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 11,
@@ -98,7 +108,8 @@ const ExamsData = [
         views: "AP, LATERAL",
         alias: ["wrist"],
         region: "UPPER EXTREMITY",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 12,
@@ -107,7 +118,8 @@ const ExamsData = [
         views: "AP, OBLIQUE, LATERAL",
         alias: ["wrist"],
         region: "UPPER EXTREMITY",
-        common: true
+        common: true,
+        shortcut: true
     },
     {
         id: 13,
@@ -116,7 +128,8 @@ const ExamsData = [
         views: "AP, OBLIQUE, LATERAL, NAVICULAR",
         alias: ["wrist"],
         region: "UPPER EXTREMITY",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 14,
@@ -125,7 +138,8 @@ const ExamsData = [
         views: "AP, OBLIQUE, LATERAL",
         alias: ["hand"],
         region: "UPPER EXTREMITY",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 15,
@@ -134,7 +148,8 @@ const ExamsData = [
         views: "AP, LATERAL",
         alias: ["hand"],
         region: "UPPER EXTREMITY",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 16,
@@ -143,7 +158,8 @@ const ExamsData = [
         views: "AP, OBLIQUE, LATERAL",
         alias: ["lower arm, finger, ring finger, index finger, thumb"],
         region: "UPPER EXTREMITY",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 17,
@@ -152,7 +168,8 @@ const ExamsData = [
         views: "AP, LATERAL, SWIMMERS",
         alias: ["cervical"],
         region: "SPINE",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 18,
@@ -161,7 +178,8 @@ const ExamsData = [
         views: "AP, LATERAL, OBLIQUES, SWIMMERS",
         alias: ["cervical"],
         region: "SPINE",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 19,
@@ -170,7 +188,8 @@ const ExamsData = [
         views: "AP, LATERAL",
         alias: ["thoracic"],
         region: "SPINE",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 20,
@@ -179,7 +198,8 @@ const ExamsData = [
         views: "AP, OBLIQUES, LATERAL, SPOT",
         alias: ["lumbar"],
         region: "SPINE",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 21,
@@ -188,7 +208,8 @@ const ExamsData = [
         views: "AP, LATERAL, SPOT",
         alias: ["lumbar"],
         region: "SPINE",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 22,
@@ -197,7 +218,8 @@ const ExamsData = [
         views: "AP, AP, LATERAL",
         alias: ["sacrum"],
         region: "SPINE",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 23,
@@ -206,7 +228,8 @@ const ExamsData = [
         views: "AP",
         alias: ["pelvis"],
         region: "PELVIS",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 24,
@@ -215,7 +238,8 @@ const ExamsData = [
         views: "AP, AP INLET, AP OUTLET",
         alias: ["pelvis"],
         region: "PELVIS",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 25,
@@ -224,7 +248,8 @@ const ExamsData = [
         views: "AP, OBLIQUE, LATERAL",
         alias: ["toe"],
         region: "FOOT",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 26,
@@ -233,7 +258,8 @@ const ExamsData = [
         views: "AP, OBLIQUE, LATERAL",
         alias: ["foot"],
         region: "FOOT",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 27,
@@ -242,7 +268,8 @@ const ExamsData = [
         views: "AP, LATERAL",
         alias: ["foot"],
         region: "FOOT",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 28,
@@ -251,7 +278,8 @@ const ExamsData = [
         views: "AXIAL, LATERAL",
         alias: ["heel"],
         region: "FOOT",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 29,
@@ -260,7 +288,8 @@ const ExamsData = [
         views: "AP, OBLIQUE, LATERAL",
         alias: ["ankle"],
         region: "ANKLE",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 30,
@@ -269,7 +298,8 @@ const ExamsData = [
         views: "AP, LATERAL",
         alias: ["tib-fib"],
         region: "TIB-FIB",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 31,
@@ -278,7 +308,8 @@ const ExamsData = [
         views: "AP, OBLIQUE, LATERAL",
         alias: ["knee"],
         region: "KNEE",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 32,
@@ -287,16 +318,18 @@ const ExamsData = [
         views: "AP, LATERAL",
         alias: ["knee"],
         region: "KNEE",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 33,
         procedure: "KNEE 4 VIEW",
-        anatomy: "KNEE",
+        anatomy: "KNEE",  
         views: "AP, OBLIQUE, LATERAL, SUNRISE",
         alias: ["knee"],
         region: "KNEE",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 34,
@@ -305,7 +338,8 @@ const ExamsData = [
         views: "AP, OBLIQUE, LATERAL, TUNNEL",
         alias: ["knee"],
         region: "KNEE",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 35,
@@ -314,7 +348,8 @@ const ExamsData = [
         views: "AP, LATERAL",
         alias: ["femur"],
         region: "FEMUR",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 36,
@@ -323,7 +358,8 @@ const ExamsData = [
         views: "PELVIS, AP, LATERAL",
         alias: ["hip"],
         region: "LOWER EXTERMITY",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 37,
@@ -332,7 +368,8 @@ const ExamsData = [
         views: "AP, LATERAL",
         alias: ["hip"],
         region: "LOWER EXTERMITY",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 38,
@@ -341,7 +378,8 @@ const ExamsData = [
         views: "PA, LATERAL",
         alias: ["chest"],
         region: "CHEST",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 39,
@@ -350,7 +388,8 @@ const ExamsData = [
         views: "AP",
         alias: ["chest"],
         region: "CHEST",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 40,
@@ -359,7 +398,8 @@ const ExamsData = [
         views: "AP",
         alias: ["abdomen"],
         region: "ABDOMEN",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 41,
@@ -368,7 +408,8 @@ const ExamsData = [
         views: "UPRIGHT, KUB",
         alias: ["abdomen"],
         region: "ABDOMEN",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 42,
@@ -377,7 +418,8 @@ const ExamsData = [
         views: "UPRIGHT, KUB, CHEST",
         alias: ["abdomen, kub"],
         region: "ABDOMEN",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 43,
@@ -386,7 +428,8 @@ const ExamsData = [
         views: "AP (UPPER & LOWER), OBLIQUE (UPPER & LOWER), CHEST",
         alias: ["ribs"],
         region: "RIBS",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 44,
@@ -395,7 +438,8 @@ const ExamsData = [
         views: "PA (RAO), LATERAL",
         alias: ["sternum"],
         region: "STERNUM",
-        common: true
+        common: true,
+        shortcut: false
     },
     {
         id: 46,
@@ -404,7 +448,8 @@ const ExamsData = [
         views: "PA (Caldwell), Lateral, AP (Towne)",
         alias: ["skull", "head x-ray"],
         region: "HEAD",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 47,
@@ -413,7 +458,8 @@ const ExamsData = [
         views: "Waters, Caldwell, LATERAL",
         alias: ["face", "orbits"],
         region: "HEAD",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 48,
@@ -422,7 +468,8 @@ const ExamsData = [
         views: "Waters, Caldwell, Lateral",
         alias: ["sinus", "paranasal sinuses"],
         region: "HEAD",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 49,
@@ -431,7 +478,8 @@ const ExamsData = [
         views: "AP w/o weights, AP w/ weights",
         alias: ["ac joints"],
         region: "UPPER EXTREMITY",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 50,
@@ -440,7 +488,8 @@ const ExamsData = [
         views: "AP, PA (Serendipity)",
         alias: ["sc joint"],
         region: "UPPER EXTREMITY",
-        common: false
+        common: false,
+        shortcut: false
     },
     {
         id: 51,
@@ -449,7 +498,8 @@ const ExamsData = [
         views: "AP w/o rotation, AP w/ rotation",
         alias: ["si joint"],
         region: "PELVIS",
-        common: false
+        common: false,
+        shortcut: false
     },
 ];
 

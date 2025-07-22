@@ -1,9 +1,6 @@
 
 function Exam(props) {
 
-    
-
-
     return <section className="exam-display">
         <h2 className="exam-display-procedure">{`${props.procedure}: `}</h2>
         <br></br>

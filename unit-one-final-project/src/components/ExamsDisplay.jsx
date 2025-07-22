@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import Exam from "./Exam";
+import ExamsData from "./ExamData/ExamsData";
 
 
 
@@ -16,6 +17,9 @@ function ExamsDisplay() {
     })
     //Take off
     console.log(showSCvalue)
+
+
+
    
     return (
         <>
@@ -24,7 +28,18 @@ function ExamsDisplay() {
             <br></br>
             <div>
                 {storeData.map((data) => {
-                    const addShortcut = () => {data.shortcut=true}
+                    const addShortcut = () => { if(data.shortcut === false){
+                        for(let exam of ExamsData){
+                            if(exam.procedure === data.procedure){
+                                exam.shortcut = true
+                            }
+                        }
+                        
+                        //Take off
+                        console.log(data.shortcut)
+                       return data.shortcut;
+                       
+                    }}
                     return <Exam key={data.id} procedure={data.procedure} views={data.views} add={addShortcut} button="+"/>
                 })}
             </div>

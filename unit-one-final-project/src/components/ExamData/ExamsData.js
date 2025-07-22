@@ -247,7 +247,7 @@ const ExamsData = [
         anatomy: "TOE",
         views: "AP, OBLIQUE, LATERAL",
         alias: ["toe"],
-        region: "FOOT",
+        region: "LOWER EXTREMITY",
         common: true,
         shortcut: false
     },
@@ -257,7 +257,7 @@ const ExamsData = [
         anatomy: "FOOT",
         views: "AP, OBLIQUE, LATERAL",
         alias: ["foot"],
-        region: "FOOT",
+        region: "LOWER EXTREMITY",
         common: true,
         shortcut: false
     },
@@ -267,7 +267,7 @@ const ExamsData = [
         anatomy: "FOOT",
         views: "AP, LATERAL",
         alias: ["foot"],
-        region: "FOOT",
+        region: "LOWER EXTREMITY",
         common: true,
         shortcut: false
     },
@@ -277,7 +277,7 @@ const ExamsData = [
         anatomy: "CALCANEUS",
         views: "AXIAL, LATERAL",
         alias: ["heel"],
-        region: "FOOT",
+        region: "LOWER EXTREMITY",
         common: true,
         shortcut: false
     },
@@ -287,7 +287,7 @@ const ExamsData = [
         anatomy: "ANKLE",
         views: "AP, OBLIQUE, LATERAL",
         alias: ["ankle"],
-        region: "ANKLE",
+        region: "LOWER EXTREMITY",
         common: true,
         shortcut: false
     },
@@ -297,7 +297,7 @@ const ExamsData = [
         anatomy: "TIB-FIB",
         views: "AP, LATERAL",
         alias: ["tib-fib"],
-        region: "TIB-FIB",
+        region: "LOWER EXTREMITY",
         common: true,
         shortcut: false
     },
@@ -307,7 +307,7 @@ const ExamsData = [
         anatomy: "KNEE",
         views: "AP, OBLIQUE, LATERAL",
         alias: ["knee"],
-        region: "KNEE",
+        region: "LOWER EXTREMITY",
         common: true,
         shortcut: false
     },
@@ -317,7 +317,7 @@ const ExamsData = [
         anatomy: "KNEE",
         views: "AP, LATERAL",
         alias: ["knee"],
-        region: "KNEE",
+        region: "LOWER EXTREMITY",
         common: false,
         shortcut: false
     },
@@ -327,7 +327,7 @@ const ExamsData = [
         anatomy: "KNEE",  
         views: "AP, OBLIQUE, LATERAL, SUNRISE",
         alias: ["knee"],
-        region: "KNEE",
+        region: "LOWER EXTREMITY",
         common: false,
         shortcut: false
     },
@@ -337,7 +337,7 @@ const ExamsData = [
         anatomy: "KNEE",
         views: "AP, OBLIQUE, LATERAL, TUNNEL",
         alias: ["knee"],
-        region: "KNEE",
+        region: "LOWER EXTREMITY",
         common: false,
         shortcut: false
     },
@@ -347,7 +347,7 @@ const ExamsData = [
         anatomy: "FEMUR",
         views: "AP, LATERAL",
         alias: ["femur"],
-        region: "FEMUR",
+        region: "LOWER EXTREMITY",
         common: true,
         shortcut: false
     },
@@ -357,7 +357,7 @@ const ExamsData = [
         anatomy: "HIP",
         views: "PELVIS, AP, LATERAL",
         alias: ["hip"],
-        region: "LOWER EXTERMITY",
+        region: "LOWER EXTREMITY",
         common: true,
         shortcut: false
     },
@@ -367,7 +367,7 @@ const ExamsData = [
         anatomy: "HIP",
         views: "AP, LATERAL",
         alias: ["hip"],
-        region: "LOWER EXTERMITY",
+        region: "LOWER EXTREMITY",
         common: false,
         shortcut: false
     },
@@ -427,7 +427,7 @@ const ExamsData = [
         anatomy: "RIBS",
         views: "AP (UPPER & LOWER), OBLIQUE (UPPER & LOWER), CHEST",
         alias: ["ribs"],
-        region: "RIBS",
+        region: "CHEST",
         common: true,
         shortcut: false
     },
@@ -437,7 +437,7 @@ const ExamsData = [
         anatomy: "STERNUM",
         views: "PA (RAO), LATERAL",
         alias: ["sternum"],
-        region: "STERNUM",
+        region: "CHEST",
         common: true,
         shortcut: false
     },

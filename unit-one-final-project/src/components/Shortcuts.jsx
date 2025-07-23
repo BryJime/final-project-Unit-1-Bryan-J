@@ -11,18 +11,19 @@ function Shortcuts() {
     return (
         <>
             <div className="shortcuts-title-feature">
-                <button className="edit-shortcuts-button">EDIT</button>
                 <h2 className="shortcuts-title">SHORTCUTS</h2>
             </div>
             <hr></hr>
             <div>
                 {ExamsData.map((data) => {
                     
-                    const removeShortcut = () => {
+                    const removeShortcut = (e) => {
+                        e.preventDefault();
                         for (let exam of ExamsData) {
                             if (exam.procedure === data.procedure) {
                                 console.log(exam.procedure)
                                 console.log(data.procedure)
+                                
                                 exam.shortcut = false
                                 setDisplayExam(exam.shortcut);
                                 console.log(displayExam)

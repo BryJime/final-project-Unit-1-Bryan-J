@@ -1,14 +1,17 @@
-
+import { motion } from 'framer-motion'
 
 function Searchbar(props) {
 
 
     return (
-        <form className="search-feature">
+        <div className="search-feature">
             <input type="text" name="search-bar" value={props.input} placeholder="Search Body Part" className="searchBar"
                 onChange={props.setInput} />
-            <button onClick={props.data} className="search-button">Search</button>
-        </form>
+            
+            <motion.button whileHover={{
+                scale: .9,
+            }}onClick={props.data} className="search-button">Search</motion.button>
+        </div>
     )
 }
 

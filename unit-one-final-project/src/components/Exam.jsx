@@ -1,3 +1,6 @@
+import { motion } from 'framer-motion'
+
+
 
 function Exam(props) {
 
@@ -5,7 +8,9 @@ function Exam(props) {
         <h2 className="exam-display-procedure">{`${props.procedure}: `}</h2>
         <br></br>
         <h2 className="exam-display-views">{props.views}</h2>
-        <button className="add-shortcut-button" onClick={props.add}>{props.button}</button>
+        <motion.button whileTap={{
+            scale: .8,
+        }}className="add-shortcut-button" onClick={props.add}>{props.button}</motion.button>
     </section>
 }
 

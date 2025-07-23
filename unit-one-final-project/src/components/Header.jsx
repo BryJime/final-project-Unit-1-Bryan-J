@@ -8,9 +8,9 @@ function Header () {
         <>
 
             <header className="header">
-                <section className="header-logo">
-                    <h1 className="logo">X-ACT ORDER</h1>
-                </section>
+            
+                <h1 className="logo">X-ACT ORDER</h1>
+                
 
                 <section className="navbar">
 

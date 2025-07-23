@@ -51,6 +51,8 @@ function Search() {
         console.log(`Input: ${inputValue}`)
         console.log(exam)
 
+        //Needs additional validation (ex. extra spaces)
+
         if (!exam.length) {
             setvalidInput(false);
         } else {

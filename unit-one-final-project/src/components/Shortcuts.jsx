@@ -2,11 +2,21 @@ import ExamsData from "./ExamData/ExamsData";
 import Exam from "./Exam";
 import { useState } from "react";
 
+
 function Shortcuts() {
 
-    const [ displayExam, setDisplayExam] = useState();
+    const [ examValues, setExamValues] = useState(() => ExamsData.filter(data => data.shortcut));
+
 
     let shortcutButton;
+
+    console.log(examValues)
+
+
+    function removeShortcut (e) {
+        
+    }
+
 
     return (
         <>
@@ -15,25 +25,14 @@ function Shortcuts() {
             </div>
             <hr></hr>
             <div>
-                {ExamsData.map((data) => {
-                    
-                    const removeShortcut = (e) => {
-                        e.preventDefault();
-                        for (let exam of ExamsData) {
-                            if (exam.procedure === data.procedure) {
-                                console.log(exam.procedure)
-                                console.log(data.procedure)
-                                
-                                exam.shortcut = false
-                                setDisplayExam(exam.shortcut);
-                                console.log(displayExam)
-                            }
-                        }
-                    }
 
+
+
+                {examValues.map((data) => {
+                    
                     if (data.shortcut === true) {
                         shortcutButton = "-";
-                        return <Exam key={data.id} procedure={data.procedure} views={data.views} button={shortcutButton} add={removeShortcut} />
+                        return <Exam key={data.id} procedure={data.procedure} views={data.views} button={shortcutButton} add={removeShortcut(data.procedure)} />
                     }
                 })}
             </div>

@@ -10,11 +10,15 @@ function Shortcuts() {
 
     let shortcutButton;
 
+
+    //Take off
     console.log(examValues)
 
 
-    function removeShortcut (e) {
-        
+    function removeShortcut (id) {
+        setExamValues(e => (
+            e.map((exam) => exam.id === id ? { ...exam, shortcut: false } : exam )
+        ))
     }
 
 
@@ -29,10 +33,9 @@ function Shortcuts() {
 
 
                 {examValues.map((data) => {
-                    
                     if (data.shortcut === true) {
                         shortcutButton = "-";
-                        return <Exam key={data.id} procedure={data.procedure} views={data.views} button={shortcutButton} add={removeShortcut(data.procedure)} />
+                        return <Exam key={data.id} procedure={data.procedure} views={data.views} button={shortcutButton} add={() => removeShortcut(data.id)} />
                     }
                 })}
             </div>

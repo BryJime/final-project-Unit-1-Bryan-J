@@ -85,7 +85,7 @@ const ExamsData = [
         id: 9,
         procedure: "ELBOW 4 VIEW",
         anatomy: "ELBOW",
-        views: "AP, OBLIQUES(EXTERNAL&INTERNAL), LATERAL",
+        views: "AP, OBLIQUES, LATERAL",
         alias: ["elbow"],
         region: "UPPER EXTREMITY",
         common: false,

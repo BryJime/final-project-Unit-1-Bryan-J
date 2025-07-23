@@ -10,7 +10,8 @@ function Exam(props) {
         <h2 className="exam-display-views">{props.views}</h2>
         <motion.button whileTap={{
             scale: .8,
-        }}className="add-shortcut-button" onClick={props.add}>{props.button}</motion.button>
+            
+        }}className="shortcut-button" onClick={props.add}>{props.button}</motion.button>
     </section>
 }
 

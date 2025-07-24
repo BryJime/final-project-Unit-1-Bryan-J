@@ -195,7 +195,7 @@ img {
 }
 
 .shortcut-button {
-
+  font-weight: bold;
   margin-top: 6em;
   margin-bottom: 1em;
   margin-left: 3em;

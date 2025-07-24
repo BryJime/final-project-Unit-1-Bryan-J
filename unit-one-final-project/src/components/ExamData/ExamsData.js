@@ -119,7 +119,7 @@ const ExamsData = [
         alias: ["wrist"],
         region: "UPPER EXTREMITY",
         common: true,
-        shortcut: true
+        shortcut: false
     },
     {
         id: 13,

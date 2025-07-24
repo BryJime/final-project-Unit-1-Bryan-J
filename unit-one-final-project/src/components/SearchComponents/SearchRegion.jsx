@@ -1,10 +1,8 @@
 import SearchButton from './SearchButton';
 
-
-
 function SearchRegion(props) {
 
-
+  // Creates functional dropdown selection for Regional Search  
   return (
     <>
       <div className="search-region" >
@@ -18,7 +16,7 @@ function SearchRegion(props) {
           <option >ABDOMEN</option>
           <option >HEAD</option>
         </select>
-        <SearchButton data={props.data}/>
+        <SearchButton data={props.data} />
       </div>
     </>
   )

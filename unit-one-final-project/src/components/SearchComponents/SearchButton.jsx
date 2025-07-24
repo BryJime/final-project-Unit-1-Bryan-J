@@ -1,9 +1,6 @@
 import { motion } from 'framer-motion'
 
-
 function SearchButton(props) {
-
-
 
     return (
         <>

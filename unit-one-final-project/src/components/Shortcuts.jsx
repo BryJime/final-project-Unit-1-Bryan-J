@@ -2,25 +2,19 @@ import ExamsData from "./ExamData/ExamsData";
 import Exam from "./Exam";
 import { useState } from "react";
 
-
+// Finds exams that have been assigned to Shortcut page
 function Shortcuts() {
 
-    const [ examValues, setExamValues] = useState(() => ExamsData.filter(data => data.shortcut));
-
+    const [examValues, setExamValues] = useState(() => ExamsData.filter(data => data.shortcut));
 
     let shortcutButton;
 
-
-    //Take off
-    console.log(examValues)
-
-
-    function removeShortcut (id) {
+    // Sets exam shortcut to false and updates exam data
+    function removeShortcut(id) {
         setExamValues(e => (
-            e.map((exam) => exam.id === id ? { ...exam, shortcut: false } : exam )
+            e.map((exam) => exam.id === id ? { ...exam, shortcut: false } : exam)
         ))
     }
-
 
     return (
         <>
@@ -29,9 +23,6 @@ function Shortcuts() {
             </div>
             <hr></hr>
             <div>
-
-
-
                 {examValues.map((data) => {
                     if (data.shortcut === true) {
                         shortcutButton = "-";

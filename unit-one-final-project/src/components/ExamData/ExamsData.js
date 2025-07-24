@@ -215,7 +215,7 @@ const ExamsData = [
         id: 22,
         procedure: "SACRUM & COCCYX 3 VIEW",
         anatomy: "SACRUM & COCCYX",
-        views: "AP, AP, LATERAL",
+        views: "AP SACRUM, AP COCCYX, LATERAL",
         alias: ["sacrum"],
         region: "SPINE",
         common: true,
@@ -324,7 +324,7 @@ const ExamsData = [
     {
         id: 33,
         procedure: "KNEE 4 VIEW",
-        anatomy: "KNEE",  
+        anatomy: "KNEE",
         views: "AP, OBLIQUE, LATERAL, SUNRISE",
         alias: ["knee"],
         region: "LOWER EXTREMITY",

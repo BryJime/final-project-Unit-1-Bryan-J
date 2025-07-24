@@ -1,4 +1,4 @@
-import './App.css'
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
 import Shortcuts from './components/Shortcuts'
@@ -18,7 +18,6 @@ function App() {
           <Route path="/About.jsx" element={<About />} />
           <Route path="/ExamsDisplay.jsx" element={<ExamsDisplay />} />
         </Routes>
-        
       </Router>
     </>
   )

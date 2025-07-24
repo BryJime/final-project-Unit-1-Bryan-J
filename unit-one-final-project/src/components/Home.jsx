@@ -1,14 +1,11 @@
-import Search from "./Search";
+import Search from "./SearchComponents/Search";
 import { motion } from 'framer-motion'
-
-
 
 function Home() {
 
-
+    // Home page intro and search feature with animations
     return (
         <>
-
             <motion.h1 className="home-introduction"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -25,7 +22,7 @@ function Home() {
             <motion.h2 className="down-arrow"
                 initial={{ opacity: 0, y: 0 }}
                 animate={{ opacity: 1, y: [0, 10, 0] }}
-                transition={{ duration: 1.5, ease: "easeOut", y: { duration: 2, repeat: Infinity, ease: "easeInOut"} }}
+                transition={{ duration: 1.5, ease: "easeOut", y: { duration: 2, repeat: Infinity, ease: "easeInOut" } }}
             >⯆</motion.h2>
 
             <Search />

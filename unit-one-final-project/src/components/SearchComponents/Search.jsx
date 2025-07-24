@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ExamsData from "./ExamData/ExamsData";
+import ExamsData from "../ExamData/ExamsData";
 import { useNavigate } from "react-router-dom";
 import Searchbar from "./Searchbar";
 import SearchRegion from "./SearchRegion";
@@ -9,22 +9,20 @@ function Search() {
     const [inputValue, setinputValue] = useState('');
     const [validInput, setvalidInput] = useState(true);
     const navigate = useNavigate();
-
+    //Assigned data variable to be passed with state via useNavigate
     let storeData;
 
+    //Finds data based on user text input
     const getSearchData = (e) => {
         e.preventDefault();
 
         const exam = ExamsData.filter(exam => {
-            if (exam.alias.includes(inputValue, 0)) {
+            if (exam.alias.includes(inputValue.toLowerCase().trim(), 0)) {
                 return exam
             }
         })
 
         storeData = exam;
-
-        // Take off
-        console.log(`Input: ${inputValue}`)
 
         if (!exam.length) {
             setvalidInput(false);
@@ -33,11 +31,9 @@ function Search() {
         }
     }
 
-
-
+    // Finds data based on dropdown selection
     const getRegionData = (e) => {
         e.preventDefault();
-
 
         const exam = ExamsData.filter(exam => {
             if (exam.region.includes(inputValue, 0)) {
@@ -47,18 +43,8 @@ function Search() {
 
         storeData = exam;
 
-        // Take off
-        console.log(`Input: ${inputValue}`)
-        console.log(exam)
-
-        //Needs additional validation (ex. extra spaces)
-
-        if (!exam.length) {
-            setvalidInput(false);
-        } else {
-            navigate('/ExamsDisplay.jsx', { state: { storeData, inputValue } })
-        }
-
+        navigate('/ExamsDisplay.jsx', { state: { storeData, inputValue } })
+        
     }
 
     return (

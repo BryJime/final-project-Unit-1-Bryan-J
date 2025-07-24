@@ -26,10 +26,6 @@ img {
   height: auto;
 }
 
-header {
-  width: auto;
-}
-
 .header {
   display: flex;
   justify-content: space-around;
@@ -162,7 +158,7 @@ header {
 .validation-message {
   display: flex;
   justify-content: center;
-  color: rgb(255, 161, 161);
+  color: rgb(202, 99, 99);
 }
 
 .exam-title-display {
@@ -235,7 +231,8 @@ header {
   text-align: center;
 }
 
-.who-table, td {
+.who-table,
+td {
   border: 1px solid;
   border-collapse: collapse;
   width: 60%;
@@ -288,5 +285,15 @@ header {
   .exam-display {
     flex-wrap: wrap;
 
+  }
+}
+
+@media (max-width: 550px) {
+  .home-introduction {
+    text-align: center;
+  }
+
+  .logo {
+    text-align: center;
   }
 }

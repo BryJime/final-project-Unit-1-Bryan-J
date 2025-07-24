@@ -1,11 +1,10 @@
 
-
 function About() {
 
     return (
         <>
             <div className="about-content">
-                <h2 className="about-title"> -   ABOUT   - </h2>
+                <h2 className="about-title"> ABOUT </h2>
                 <hr></hr>
                 <br></br>
                 <section className="about-body">
@@ -26,35 +25,36 @@ function About() {
                         <table className="who-table">
                             <thead className="table-headers">
                                 <tr>
-                                <th>Role</th>
-                                <th>Purpose</th>
+                                    <th>Role</th>
+                                    <th>Purpose</th>
                                 </tr>
                             </thead>
                             <tbody className="table-body">
                                 <tr>
-                                    <td>Physicians:  </td>
+                                    <td>Physicians  </td>
                                     <td>Order X-Ray procedures with correct exam wording</td>
                                 </tr>
                                 <tr>
-                                    <td>Nurses:</td>
+                                    <td>Nurses</td>
                                     <td>Save common exams for quick ordering</td>
                                 </tr>
                                 <tr>
-                                    <td>Rad Techs:</td>
+                                    <td>Rad Techs</td>
                                     <td>Get procedural information such as views for exam preperation</td>
                                 </tr>
                                 <tr>
-                                    <td>Students:</td>
+                                    <td>Students</td>
                                     <td>Discover standard view groupings interactively</td>
                                 </tr>
                                 <tr>
-                                    <td>Anyone!</td>
-                                    <td>Find out about the exams and how </td>
+                                    <td>Anyone</td>
+                                    <td>Find out about x-ray exams </td>
                                 </tr>
                             </tbody>
                         </table>
                     </section>
                     <br></br>
+                    <hr></hr>
                     <section className="diclaimers-section">
                         <h1 className="disclaimers-header">Disclaimers</h1>
                         <p className="disclaimers-body">X-ACT ORDER is an educational support tool, not a substitute for clinical

@@ -1,19 +1,13 @@
 import { Link } from "react-router-dom";
 
+function Header() {
 
-function Header () {
-
-
+    // Logo and Navigation Menu
     return (
         <>
-
             <header className="header">
-            
                 <h1 className="logo">X-ACT ORDER</h1>
-                
-
                 <section className="navbar">
-
                     <section className="header-home">
                         <Link to="/">
                             HOME
@@ -29,11 +23,8 @@ function Header () {
                             ABOUT
                         </Link>
                     </section>
-
                 </section>
-
             </header>
-
         </>
     )
 }

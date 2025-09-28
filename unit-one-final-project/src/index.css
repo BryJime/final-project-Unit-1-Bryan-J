@@ -249,6 +249,36 @@ td {
 
 }
 
+.skeleton-selection {
+  display: flex;
+  justify-content: center;   /* centers horizontally */
+  align-items: center;       /* centers vertically against the image */
+  gap: 40px;                 /* space between the buttons and the image */
+}
+
+.skeleton-list {
+  display: flex;
+  flex-direction: column;    /* stack buttons vertically */
+  justify-content: center;   /* center buttons inside the list container */
+  align-items: center;       /* keep them aligned in the middle */
+  gap: 6em;                  /* even spacing between buttons */
+}
+
+.anatomy-button {
+  font-size: 1rem;          
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 1px solid #2b2b2b;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.anatomy-button:hover {
+  background: #c8c8c8;
+}
+
+
 
 @media (max-width: 800px) {
 

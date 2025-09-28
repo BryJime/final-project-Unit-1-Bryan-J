@@ -13,7 +13,7 @@ function Shortcuts() {
     // Sets exam shortcut to false and updates exam data
     function removeShortcut(id) {
         
-        for(let exam of ExamsData){
+        for(let exam of ExamsData){ 
             if (id === exam.id){
                 exam.shortcut = false;
                 break;

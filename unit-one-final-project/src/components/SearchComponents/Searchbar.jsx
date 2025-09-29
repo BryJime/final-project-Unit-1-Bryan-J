@@ -11,5 +11,5 @@ function Searchbar(props) {
         </div>
     )
 }
-
+    
 export default Searchbar;

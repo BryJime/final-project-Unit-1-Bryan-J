@@ -1,6 +1,5 @@
 import Search from "./SearchComponents/Search";
 import { motion } from 'framer-motion'
-import SkeletonSelection from "./SkeletonSelection";
 
 
 function Home() {
@@ -31,7 +30,7 @@ function Home() {
 
             <br/> 
 
-            <SkeletonSelection/>
+            
         </>
     )
 }

@@ -1,14 +1,15 @@
-// Facility-aligned exam titles for Bryan's X‑ray ordering/search app
-// Notes:
-// - procedure: exact string from facility list (asterisk removed)
-// - common: set to true if the original line had a trailing "*"
-// - anatomy/region inferred for search/filter; tweak anytime
-// - views: best-practice defaults (adjust if your site needs exact protocol wording)
-// - alias: includes lowercase terms, sides, and common synonyms for fuzzy search
-
 const ExamsData = [
   // ABDOMEN
-  { id: 1, procedure: "ABDOMEN 2 VIEW", anatomy: "ABDOMEN", views: "UPRIGHT, KUB", alias: ["abdomen", "kub", "upright", "Abdomen"], region: "ABDOMEN", common: false, shortcut: false },
+  { id: 1, 
+    procedure: "ABDOMEN 2 VIEW", 
+    anatomy: "ABDOMEN", 
+    views: "UPRIGHT, KUB", 
+    alias: ["abdomen", "kub", "upright", "Abdomen"], 
+    region: "ABDOMEN", 
+    common: false, 
+    shortcut: false 
+  },
+
   { id: 2, procedure: "ABDOMEN ACUTE", anatomy: "ABDOMEN", views: "UPRIGHT, KUB, CHEST", alias: ["abdomen", "acute", "kub", "chest", "Abdomen"], region: "ABDOMEN", common: false, shortcut: false },
   { id: 3, procedure: "ABDOMEN DECUBITUS", anatomy: "ABDOMEN", views: "LEFT LATERAL DECUBITUS", alias: ["abdomen", "decub", "lld", "Abdomen"], region: "ABDOMEN", common: false, shortcut: false },
   { id: 4, procedure: "ABDOMEN UPRIGHT", anatomy: "ABDOMEN", views: "UPRIGHT", alias: ["abdomen", "upright", "Abdomen"], region: "ABDOMEN", common: false, shortcut: false },

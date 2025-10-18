@@ -33,7 +33,7 @@ function Shortcuts() {
             <div>
                 {examValues.map((data) => {
                     if (data.shortcut === true) {
-                        shortcutButton = "-";
+                        shortcutButton = "REMOVE SHORTCUT";
                         return <Exam key={data.id} procedure={data.procedure} views={data.views} button={shortcutButton} add={() => removeShortcut(data.id)} />
                     }
                 })}

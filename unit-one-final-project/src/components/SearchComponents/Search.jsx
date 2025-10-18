@@ -51,9 +51,9 @@ function Search() {
 
     // Finds data based on Skeleton selection
     const getSkeletonData = (value) => {
-        setinputValue(value);
+        
 
-        console.log(value);
+        setinputValue(value);
 
         const exam = ExamsData.filter(exam => {
             if (exam.alias.includes(value, 0)) {
@@ -62,17 +62,16 @@ function Search() {
         })
 
         storeData = exam;
-
+        
 
         navigate('/ExamsDisplay.jsx', { state: { storeData, inputValue } })
-
-
     }
 
     return (
 
         <form>
             <h1 className="search-body-message">Search by Body Part</h1>
+            <br/>
             <Searchbar input={inputValue} setInput={(event) => setinputValue(event.target.value)} data={getSearchData} />
             <h1 className="search-region-message">or Region</h1>
             <div className="validation-message">

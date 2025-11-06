@@ -1,11 +1,14 @@
 import { useLocation } from "react-router-dom";
+import { useState } from "react";
 import Exam from "./Exam";
-import ExamsData from "./ExamData/ExamsData";
+import ExamsData from "./ExamData/ExamsData_withCPT.js";
 
 function ExamsDisplay() {
 
     const { state } = useLocation();
     const { storeData, inputValue } = state;
+    const [ isActive, setIsActive ] = useState(false);
+
 
 
     // Finds data based on search value and displays all exams based on value
@@ -22,13 +25,14 @@ function ExamsDisplay() {
                                 for (let exam of ExamsData) {
                                     if (exam.procedure === data.procedure) {
                                         exam.shortcut = true
+                                         setIsActive(true);
                                     }
                                 }
                                 return data.shortcut;
                             }
                         }
 
-                        return <Exam key={data.id} procedure={data.procedure} views={data.views} add={addShortcut} button="ADD SHORTCUT" />
+                        return <Exam key={data.id} procedure={data.procedure} views={data.views} cpt={data.cpt} add={addShortcut} button="ADD SHORTCUT" isActive={isActive} setIsActive={setIsActive} />
                     })}
                 </div>
             </div>

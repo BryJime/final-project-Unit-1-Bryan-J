@@ -14,13 +14,18 @@ function Header() {
                         </Link>
                     </section>
                     <section className="header-shortcuts">
-                        <Link to="/Shortcuts.jsx">
+                        <Link to="/Shortcuts">
                             SHORTCUTS
                         </Link>
                     </section>
                     <section className="header-about">
-                        <Link to="/About.jsx">
+                        <Link to="/About">
                             ABOUT
+                        </Link>
+                    </section>
+                    <section className="header-admin">
+                        <Link to="/AdminLogin">
+                            ADMIN
                         </Link>
                     </section>
                 </section>

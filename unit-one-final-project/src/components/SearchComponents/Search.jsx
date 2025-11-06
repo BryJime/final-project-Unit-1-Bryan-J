@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ExamsData from "../ExamData/ExamsData";
+import ExamsData from "../ExamData/ExamsData_withCPT.js";
 import { useNavigate } from "react-router-dom";
 import Searchbar from "./Searchbar";
 import SearchRegion from "./SearchRegion";

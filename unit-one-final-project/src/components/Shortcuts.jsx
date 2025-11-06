@@ -1,4 +1,4 @@
-import ExamsData from "./ExamData/ExamsData";
+import ExamsData from "./ExamData/ExamsData_withCPT.js";
 import Exam from "./Exam";
 import { useState } from "react";
 
@@ -34,7 +34,7 @@ function Shortcuts() {
                 {examValues.map((data) => {
                     if (data.shortcut === true) {
                         shortcutButton = "REMOVE SHORTCUT";
-                        return <Exam key={data.id} procedure={data.procedure} views={data.views} button={shortcutButton} add={() => removeShortcut(data.id)} />
+                        return <Exam key={data.id} procedure={data.procedure} views={data.views} cpt={data.cpt} button={shortcutButton} add={() => removeShortcut(data.id)} />
                     }
                 })}
             </div>
